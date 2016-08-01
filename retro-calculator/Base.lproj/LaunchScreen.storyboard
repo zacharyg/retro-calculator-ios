@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,45 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchbg" translatesAutoresizingMaskIntoConstraints="NO" id="OZ8-v7-VlF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="J23-RV-jXM">
+                                <rect key="frame" x="134" y="20" width="332" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="R0I-5x-1Uh"/>
+                                    <constraint firstAttribute="width" constant="332" id="VWm-X5-Kpq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="2Jq-LJ-wQz">
+                                <rect key="frame" x="180" y="301" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="1Qs-MF-6dQ"/>
+                                    <constraint firstAttribute="width" constant="240" id="fKq-lI-aWr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchground" translatesAutoresizingMaskIntoConstraints="NO" id="Ovg-HX-sXt">
+                                <rect key="frame" x="0.0" y="464" width="600" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="cDQ-0P-3PU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Jq-LJ-wQz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0nC-bM-ZHZ"/>
+                            <constraint firstItem="J23-RV-jXM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2Bu-Nm-FIf"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Ovg-HX-sXt" secondAttribute="bottom" id="8Dw-pQ-QdO"/>
+                            <constraint firstItem="J23-RV-jXM" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="Cc6-5r-b2w"/>
+                            <constraint firstItem="Ovg-HX-sXt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="KEg-C1-eek"/>
+                            <constraint firstAttribute="trailing" secondItem="OZ8-v7-VlF" secondAttribute="trailing" id="MAU-T9-JTP"/>
+                            <constraint firstItem="2Jq-LJ-wQz" firstAttribute="top" secondItem="J23-RV-jXM" secondAttribute="bottom" constant="106" id="Yqy-VP-cqV"/>
+                            <constraint firstAttribute="trailing" secondItem="Ovg-HX-sXt" secondAttribute="trailing" id="d0q-gr-usO"/>
+                            <constraint firstItem="OZ8-v7-VlF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="dgA-dA-KUO"/>
+                            <constraint firstItem="OZ8-v7-VlF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="g0J-B3-OM4"/>
+                            <constraint firstAttribute="bottom" secondItem="OZ8-v7-VlF" secondAttribute="bottom" id="sfZ-Nz-t3p"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +62,10 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Retro-Calc" width="755" height="111"/>
+        <image name="launchbg" width="1433" height="957"/>
+        <image name="launchground" width="999" height="225"/>
+        <image name="robot" width="786" height="402"/>
+    </resources>
 </document>
